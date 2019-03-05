@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ChartItem = (props) => {
-
+const ChartItem = ({song, index}) => {
+    
     return(
-        <p>{props.index + 1}. {props.song.title.label} </p>
+        <p>{index + 1}. {song.title.label} </p>
     )
 
 
