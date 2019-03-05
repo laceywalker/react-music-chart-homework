@@ -1,12 +1,12 @@
 import React from 'react';
 
-const GenreSelector = ({songs}) => {
+const GenreSelector = ({songs, onGenreSelected}) => {
     const options = songs.map((song, index) => {
         return <option value={index} key={index}>{song.category.attributes.term}</option>
     })
 
-    function handleChange(e){
-        songs.onGenreSelected(e.target.value)
+    function handleChange(event){
+        onGenreSelected(event.target.value)
     }
 
     return (

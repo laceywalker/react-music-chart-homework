@@ -23,7 +23,7 @@ class ChartContainer extends Component{
     // page renders twice - this is why we need a guard for null value 
     // aka guard against the empty array from initial page load render before API is called
 
-    handleGenreSelected( index  ){
+    handleGenreSelected(){
         const selectedGenre = this.state.songs.category.attributes.term;
         this.setState({currentGenre: selectedGenre})
     }
