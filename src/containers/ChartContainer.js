@@ -21,7 +21,12 @@ class ChartContainer extends Component{
             return <h1>I'm a Banana Boi</h1>
         }
         else {
-            return <ChartList songs = {this.state.songs}/> 
+            return (
+                <div>
+                    <h1>Top 20 Songs For the Masses</h1>
+                    <ChartList songs = {this.state.songs}/> 
+                </div>
+            )
         }
     }
 
