@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 const ChartList = (props) => {
-    console.log("ChartList props:", props);
+
     const songList = props.songs.map((song, index) => {
-        return <p key={index}>{song.title.label}</p>
+        return <p key={index}>{index + 1}. {song.title.label} </p>
     })
 
     return (
